@@ -266,12 +266,14 @@ name = "dimensionalityreduction"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "ipykernel" },
     { name = "notebook" },
     { name = "ucimlrepo" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "notebook", specifier = ">=7.5.1" },
     { name = "ucimlrepo", specifier = ">=0.0.7" },
 ]
